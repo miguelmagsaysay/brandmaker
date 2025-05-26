@@ -1,0 +1,102 @@
+'use client'
+
+import { useState } from 'react'
+import { Dialog, DialogPanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+
+const navigation = [
+  { name: 'Services', href: '#' },
+  { name: 'Portfolio', href: '#' },
+  { name: 'Contact', href: '#' },
+]
+
+export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  return (
+    <header className="w-full bg-[#6045A5]">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
+        {/* Logo */}
+        <div className="flex lg:flex-1">
+  <a href="#" className="-m-1.5 p-1.5">
+    <img 
+      src="/brandmaker-logo.png" 
+      alt="BrandMaker Logo" 
+      className="h-14 w-auto sm:h-12 md:h-16 lg:h-20 xl:h-24"
+      />
+  </a>
+</div>
+
+
+        {/* Mobile menu button */}
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            className="inline-flex items-center justify-center rounded-md p-2.5 text-white"
+          >
+            <Bars3Icon className="h-8 w-8" aria-hidden="true" />
+          </button>
+        </div>
+
+        {/* Desktop menu */}
+        <div className="hidden lg:flex lg:items-center lg:space-x-8">
+          {navigation.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-xl font-light text-white hover:text-purple-300 transition"
+            >
+              {item.name}
+            </a>
+          ))}
+          <a
+            href="#"
+            className="ml-4 inline-block rounded-full border border-white px-4 py-2 text-sm font-semibold text-white hover:bg-white hover:text-purple-700 transition"
+          >
+            Get a Qoute
+          </a>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full bg-transparent backdrop-blur-md px-6 py-6 sm:max-w-sm">
+          <div className="flex items-center justify-between">
+            <a href="#" className="text-xl font-bold text-white">
+            <img 
+      src="/brandmaker-logo.png" 
+      alt="BrandMaker Logo" 
+      className="h-8 w-auto" // adjust size as needed
+    />
+            </a>
+            <button
+              type="button"
+              className="rounded-md p-2.5 text-white"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          </div>
+          <div className="mt-6 space-y-4">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="block text-base font-semibold text-white hover:text-purple-300"
+              >
+                {item.name}
+              </a>
+            ))}
+            <a
+              href="#"
+              className="block w-full text-center rounded-full border border-white px-4 py-2 text-sm font-semibold text-white hover:bg-white hover:text-purple-700 transition"
+            >
+              Get a Quote
+            </a>
+          </div>
+        </DialogPanel>
+      </Dialog>
+    </header>
+  )
+}
