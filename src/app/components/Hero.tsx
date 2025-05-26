@@ -12,7 +12,7 @@ export default function HeroSection() {
             We Help Brands Stand Out and Sell More
           </h1>
           <p className="text-lg mb-8 px-4 sm:px-0">
-            As a business owner, you’ve got enough on your plate. Managing your own marketing is like taking on another full-time job! Not every business needs a full-time marketing team—Let us handle it and save on costs while still getting expert results.
+            As a business owner, you&apos;ve got enough on your plate. Managing your own marketing is like taking on another full-time job! Not every business needs a full-time marketing team—Let us handle it and save on costs while still getting expert results.
           </p>
           <div className="flex justify-center md:justify-start">
             <a href="/get-a-quote">

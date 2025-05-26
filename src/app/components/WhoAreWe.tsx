@@ -22,11 +22,11 @@ export default function WhoAreWe() {
            Who Are We
           </h1>
           <p className="text-lg mb-8 px-4 sm:px-0">
-  We’re Brand Maker, a digital marketing agency based in Subic Bay, Philippines. We help businesses grow through smart branding, engaging content, and results-driven social media.<br /><br />
+  We&apos;re Brand Maker, a digital marketing agency based in Subic Bay, Philippines. We help businesses grow through smart branding, engaging content, and results-driven social media.<br /><br />
 
   Founded in March 2024, we started small and quickly scaled by building strong partnerships. Within our first month, we landed clients like Xtremely Xpresso and Ayala Malls Harbor Point.<br /><br />
 
-  Today, we’re one of the leading agencies in Subic and now work with U.S. tech companies like Pomelo, Collective, Mindkeep AI, and more.<br /><br />
+  Today, we&apos;re one of the leading agencies in Subic and now work with U.S. tech companies like Pomelo, Collective, Mindkeep AI, and more.<br /><br />
 
   With a scalable model and proven results, Brand Maker is ready to go global.
 </p>

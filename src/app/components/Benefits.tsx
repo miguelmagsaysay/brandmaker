@@ -23,7 +23,7 @@ export default function BenefitSection() {
                 Cost effective
               </h4>
               <p className="text-xl mt-2 text-white text-center">
-                You don't require additional employees for managing social media. It means fewer taxes and responsibilities.
+                You don&apos;t require additional employees for managing social media. It means fewer taxes and responsibilities.
               </p>
             </div>
 

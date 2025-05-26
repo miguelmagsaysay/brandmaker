@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <div className="bg-[#6045A5] text-white py-16 px-6 lg:px-20">
     <h2 className="text-4xl lg:text-5xl font-bold text-center mb-8">
-      Let’s Build Your Brand Together
+      Let&apos;s Build Your Brand Together
     </h2>
     <div className="border-t border-white w-16 mx-auto mb-12" />
   
