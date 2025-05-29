@@ -16,15 +16,18 @@ const brands = [
 
 export default function Clients() {
   return (
-    <section className="bg-[#6045A5] text-white py-20 px-6 md:px-16">
+    <section className="bg-white text-gray-900 py-16 px-6 md:px-16">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold">
-          Trusted by <span className="text-[#6C3DFF]">20+</span> clients worldwide
+        <h2 className="text-xl md:text-2xl font-semibold">
+          Trusted by <span className="text-[#6045A5]">20+</span> clients worldwide
         </h2>
 
         <div className="flex flex-wrap justify-center gap-6 mt-10 md:justify-around">
           {brands.map((brand, index) => (
-            <div key={index} className="opacity-80 hover:opacity-100 transition">
+            <div
+              key={index}
+              className="opacity-90"
+            >
               <Image src={brand.src} alt={brand.alt} width={108} height={29} />
             </div>
           ))}

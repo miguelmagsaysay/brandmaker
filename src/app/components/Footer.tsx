@@ -20,7 +20,7 @@ export function Footer() {
         <div className="flex space-x-4">
           <a
             href="https://facebook.com"
-            className="bg-white text-purple-700 rounded-full p-2 hover:bg-gray-200 transition"
+            className="bg-white text-[#6045A5] rounded-full p-2 hover:bg-gray-200 transition"
             aria-label="Facebook"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -29,7 +29,7 @@ export function Footer() {
           </a>
           <a
             href="https://instagram.com"
-            className="bg-white text-purple-700 rounded-full p-2 hover:bg-gray-200 transition"
+            className="bg-white text-[#6045A5] rounded-full p-2 hover:bg-gray-200 transition"
             aria-label="Instagram"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ export function Footer() {
       <div className="w-full lg:w-auto">
         <a
           href="#"
-          className="bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 transition"
+          className="bg-white text-[#6045A5] px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 transition"
         >
           Book a Free Consultation
         </a>

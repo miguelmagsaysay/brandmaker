@@ -16,10 +16,11 @@ export default function Home() {
     <Hero />
 
     <Clients/>
-<WhoAreWe/>
+    <ServicesSection />
+{/* <WhoAreWe/> */}
 <Image/>
-<ServicesSection />
 <Benefits/>
+
 <Footer/>
     </>
   )
