@@ -3,7 +3,6 @@
 import Clients from "./components/Clients"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
-import WhoAreWe from "./components/WhoAreWe"
 import Image from "./components/Image"
 import ServicesSection from "./components/Services"
 import Benefits from "./components/Benefits"
@@ -17,7 +16,6 @@ export default function Home() {
 
     <Clients/>
     <ServicesSection />
-{/* <WhoAreWe/> */}
 <Image/>
 <Benefits/>
 
